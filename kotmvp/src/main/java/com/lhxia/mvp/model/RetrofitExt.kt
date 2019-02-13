@@ -9,7 +9,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
 /**
- * @Author : xialonghua06353@hellobike.com
+ * @Author : xialonghua
  * @Date : Create in 2019/1/22
  * @Description : a new file
  */
