@@ -99,12 +99,12 @@ install {
 }
 
 bintray {
-    //上传到JCenter
-    Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-    user = properties.getProperty("bintray.username")    //读取 local.properties 文件里面的 bintray.user 登录用户名。
-    key = properties.getProperty("bintray.apikey")   //读取 local.properties 文件里面的 bintray.apikey
+    user = 'xialonghua'    //读取 local.properties 文件里面的 bintray.user 登录用户名。
+    key = System.getProperty("apikey")   //读取 local.properties 文件里面的 bintray.apikey
+    if(key == null || key.isEmpty()){
+        key = System.getenv("apikey")
+    }
     configurations = ['archives']
     pkg {
         //这里的repo值必须要和你创建Maven仓库的时候的名字一样
