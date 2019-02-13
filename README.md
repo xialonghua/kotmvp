@@ -1,5 +1,6 @@
 # KotMVP
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Build](https://travis-ci.org/xialonghua/kotmvp.svg?branch=master)](https://github.com/xialonghua/kotmvp)
 
 作者：Tsy远
 链接：https://www.jianshu.com/p/6a6eca8c24c4
