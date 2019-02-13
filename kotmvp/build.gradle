@@ -56,7 +56,7 @@ def gitUrl = 'https://github.com/xialonghua/kotmvp'
 
 def libName = "kotmvp"; // 上传到 Bintray 的 package 名称。
 group = "com.lhxia.kotmvp"
-version = "0.0.3"
+version = "0.0.4"
 // 这两个参数配置是为了最终生成 compile 'me.lfq:依赖库的名称:1.0.0'  group  version 是关键字，自动识别的。只需配置好就行。
 
 install {
@@ -105,6 +105,7 @@ bintray {
     if(key == null || key.isEmpty()){
         key = System.getenv("apikey")
     }
+
     configurations = ['archives']
     pkg {
         //这里的repo值必须要和你创建Maven仓库的时候的名字一样
