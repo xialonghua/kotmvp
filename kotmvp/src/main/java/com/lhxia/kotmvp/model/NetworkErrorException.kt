@@ -1,4 +1,4 @@
-package com.lhxia.mvp.model
+package com.lhxia.kotmvp.model
 
 /**
  * @Author : xialonghua

@@ -1,8 +1,8 @@
 package com.lhxia.mvp
 
-import com.lhxia.mvp.model.DefaultResultDecoder
-import com.lhxia.mvp.model.RetrofitModelRequest
-import com.lhxia.mvp.model.await
+import com.lhxia.kotmvp.model.DefaultResultDecoder
+import com.lhxia.kotmvp.model.RetrofitModelRequest
+import com.lhxia.kotmvp.model.await
 import retrofit2.Call
 
 /**

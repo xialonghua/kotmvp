@@ -1,4 +1,4 @@
-package com.lhxia.mvp.core
+package com.lhxia.kotmvp.core
 
 /**
  * @Author : xialonghua

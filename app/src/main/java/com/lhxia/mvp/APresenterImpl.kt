@@ -1,7 +1,7 @@
 package com.lhxia.mvp
 
-import com.lhxia.mvp.core.BasePresenter
-import com.lhxia.mvp.model.NetworkErrorException
+import com.lhxia.kotmvp.core.BasePresenter
+import com.lhxia.kotmvp.model.NetworkErrorException
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.lang.Exception

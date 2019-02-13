@@ -1,4 +1,4 @@
-package com.lhxia.mvp.core
+package com.lhxia.kotmvp.core
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +13,8 @@ import kotlin.coroutines.CoroutineContext
  * @Date : Create in 2019/2/13
  * @Description : a new file
  */
-open class BaseMPVFragment<P : Contract.Presenter> : Fragment(), CoroutineScope, Contract.View<P> {
+open class BaseMPVFragment<P : Contract.Presenter> : Fragment(), CoroutineScope,
+    Contract.View<P> {
 
     val job = SupervisorJob()
 

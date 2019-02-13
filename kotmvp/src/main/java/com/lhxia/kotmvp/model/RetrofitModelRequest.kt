@@ -1,6 +1,6 @@
-package com.lhxia.mvp.model
+package com.lhxia.kotmvp.model
 
-import com.lhxia.mvp.core.Model
+import com.lhxia.kotmvp.core.Model
 import retrofit2.Call
 
 /**

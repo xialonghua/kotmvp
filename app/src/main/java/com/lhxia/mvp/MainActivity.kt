@@ -1,7 +1,7 @@
 package com.lhxia.mvp
 
 import android.os.Bundle
-import com.lhxia.mvp.core.BaseMPVActivity
+import com.lhxia.kotmvp.core.BaseMPVActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 

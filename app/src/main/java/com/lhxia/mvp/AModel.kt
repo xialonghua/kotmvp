@@ -1,6 +1,6 @@
 package com.lhxia.mvp
 
-import com.lhxia.mvp.core.Model
+import com.lhxia.kotmvp.core.Model
 
 /**
  * @Author : xialonghua

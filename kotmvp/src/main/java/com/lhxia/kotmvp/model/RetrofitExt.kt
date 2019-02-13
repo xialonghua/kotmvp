@@ -1,4 +1,4 @@
-package com.lhxia.mvp.model
+package com.lhxia.kotmvp.model
 
 import kotlinx.coroutines.*
 import retrofit2.Call
