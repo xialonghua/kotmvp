@@ -149,5 +149,5 @@ class APresenterImpl(override val view : AContract.AView, parentCoroutineContext
 }
 ```
 ## Demo
-详情可以参考module:app中的示例，或者欢迎提[![Issue](![](https://img.shields.io/github/issues/xialonghua/kotmvp.svg?style=flat))](https://github.com/xialonghua/kotmvp/issues)
+详情可以参考module:app中的示例，或者欢迎提[![Issue](https://img.shields.io/github/issues/xialonghua/kotmvp.svg?style=flat)](https://github.com/xialonghua/kotmvp/issues)
 
