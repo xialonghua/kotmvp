@@ -4,7 +4,11 @@
 [![Download](https://api.bintray.com/packages/xialonghua/kotmvp/kotmvp/images/download.svg)](https://bintray.com/xialonghua/kotmvp/kotmvp/_latestVersion)
 
 是一个Kotlin写的MVP脚手架。
-一般的MVP框架都没有协程的支持。KotMVP将协程的特性引入到MVP中。并且抽象了Model层可以自定义自己的Model。使使用MVP变得更加简单。
+一般的MVP框架都没有协程的支持。KotMVP将协程的特性引入到MVP中。并且抽象了Model层可以自定义自己的Model。内置Retrofit请求接口。
+带来的好处：
+1. 拥有MVP基本的框架
+2. Coroutine使代码更加偏向逻辑，更少的关注异步回调
+3. 拥有与Activity或者Fragment绑定的生命周期，无需关注Model层请求的释放
 
 # 包含功能
 - MVP
@@ -145,4 +149,5 @@ class APresenterImpl(override val view : AContract.AView, parentCoroutineContext
 }
 ```
 ## Demo
-详情可以参考module:app中的示例
+详情可以参考module:app中的示例，或者欢迎提[![Issue](![](https://img.shields.io/github/issues/xialonghua/kotmvp.svg?style=flat))](https://github.com/xialonghua/kotmvp/issues)
+
