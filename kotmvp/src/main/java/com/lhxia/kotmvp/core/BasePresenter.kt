@@ -6,6 +6,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
+import kotlin.system.measureTimeMillis
 
 /**
  * @Author : xialonghua
@@ -28,9 +29,25 @@ abstract class BasePresenter(open val view : Contract.View<*>,
             }
         }
 
-    override fun onCreate(){}
+    override fun onCreate(){
+        val time = measureTimeMillis {
+            javaClass.declaredFields.forEach {
+                val an = it.type.getAnnotation(Repo::class.java) ?: return@forEach
+                var instance =  modelInstanceCache[an.implClass.java.canonicalName]
+                if(instance == null){
+                    instance = an.implClass.java.newInstance() as Model
+                    modelInstanceCache[an.implClass.java.canonicalName] = instance
+                }
+                it.isAccessible = true
+                it.set(this, instance)
+            }
+        }
+        print(time)
+    }
 
     override fun onDestroy() {
         job?.cancel()
     }
 }
+
+val modelInstanceCache = HashMap<String?, Model>()

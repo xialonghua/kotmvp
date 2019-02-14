@@ -16,7 +16,7 @@ import kotlin.coroutines.EmptyCoroutineContext
 class APresenterImpl(override val view : AContract.AView, parentCoroutineContext: CoroutineContext = EmptyCoroutineContext)
     : BasePresenter(view, parentCoroutineContext), AContract.APresenter {
 
-    private val aModel : AModel = AModel()
+    private lateinit var aModel : AModel
 
     override fun onCreate() {
         super.onCreate()
