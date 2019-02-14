@@ -144,3 +144,5 @@ class APresenterImpl(override val view : AContract.AView, parentCoroutineContext
     }
 }
 ```
+## Demo
+详情可以参考module:app中的示例
