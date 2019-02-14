@@ -30,19 +30,16 @@ abstract class BasePresenter(open val view : Contract.View<*>,
         }
 
     override fun onCreate(){
-        val time = measureTimeMillis {
-            javaClass.declaredFields.forEach {
-                val an = it.type.getAnnotation(Repo::class.java) ?: return@forEach
-                var instance =  modelInstanceCache[an.implClass.java.canonicalName]
-                if(instance == null){
-                    instance = an.implClass.java.newInstance() as Model
-                    modelInstanceCache[an.implClass.java.canonicalName] = instance
-                }
-                it.isAccessible = true
-                it.set(this, instance)
+        javaClass.declaredFields.forEach {
+            val an = it.type.getAnnotation(Repo::class.java) ?: return@forEach
+            var instance =  modelInstanceCache[an.implClass.java.canonicalName]
+            if(instance == null){
+                instance = an.implClass.java.newInstance() as Model
+                modelInstanceCache[an.implClass.java.canonicalName] = instance
             }
+            it.isAccessible = true
+            it.set(this, instance)
         }
-        print(time)
     }
 
     override fun onDestroy() {

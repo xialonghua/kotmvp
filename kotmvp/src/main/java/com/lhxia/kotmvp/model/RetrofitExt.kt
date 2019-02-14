@@ -36,7 +36,6 @@ suspend fun <T> Call<T>.await(decoder: ResultDecoder<T>): T = suspendCancellable
     enqueue(object : Callback<T> {
         override fun onResponse(call: Call<T>, response: Response<T>) {
             try {
-                Thread.sleep(3000)
                 cont.resume(decoder.decode(response))
             }catch (e : Exception){
                 cont.resumeWithException(e)
