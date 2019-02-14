@@ -54,9 +54,9 @@ def siteUrl = 'https://github.com/xialonghua/kotmvp'
 //项目的git地址
 def gitUrl = 'https://github.com/xialonghua/kotmvp'
 
-def libName = "kotmvp"; // 上传到 Bintray 的 package 名称。
+def libName = "kotmvp" // 上传到 Bintray 的 package 名称。
 group = "com.lhxia.kotmvp"
-version = "0.0.5"
+version = "0.0.6"
 // 这两个参数配置是为了最终生成 compile 'me.lfq:依赖库的名称:1.0.0'  group  version 是关键字，自动识别的。只需配置好就行。
 
 install {

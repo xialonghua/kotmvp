@@ -19,7 +19,7 @@
 ## Gradle
 gradle加入：
 ```Gradle
-    implementation 'com.lhxia.kotmvp:kotmvp:0.0.5'
+    implementation 'com.lhxia.kotmvp:kotmvp:0.0.6'
 ```
 
 # 如何使用
