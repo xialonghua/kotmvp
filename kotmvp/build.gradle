@@ -108,8 +108,9 @@ bintray {
 
     if(key == null || key.isEmpty()){
         try {
-            Properties properties = Properties()
-            properties.load(FileInputStream("local.properties"))
+            Properties properties = new Properties()
+            InputStream inputStream = project.rootProject.file('local.properties').newDataInputStream() ;
+            properties.load( inputStream )
             key = properties.getProperty("bintray.apikey")
         }catch(Exception e){
             e.printStackTrace()
