@@ -20,17 +20,17 @@ class APresenterImpl(override val view : AContract.AView, parentCoroutineContext
 
     override fun onCreate() {
         super.onCreate()
-
-        launch {
-            delay(3000)
-            view.showError("11111")
-            val a = aModel.getInfo()
-            try {
-                view.setInfo(a.getResp())
-            } catch (e : NetworkErrorException){
-                view.showError("网络错误")
-            }
-            view.showError("网络错误22222")
-        }
+//
+//        launch {
+//            delay(3000)
+//            view.showError("11111")
+//            val a = aModel.getInfo()
+//            try {
+//                view.setInfo(a.getResp())
+//            } catch (e : NetworkErrorException){
+//                view.showError("网络错误")
+//            }
+//            view.showError("网络错误22222")
+//        }
     }
 }

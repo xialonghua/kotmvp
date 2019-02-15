@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KotMVP</string>
+    <string name="splash_bottom_tip">为您收集图片与视频资讯</string>
+    <string name="tab_pic">图片</string>
+    <string name="tab_my">我的</string>
+    <string name="tab_video">视频</string>
+    <string name="pic_count">%1$d图</string>
 </resources>

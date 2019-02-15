@@ -11,7 +11,6 @@ interface AContract: Contract {
 
     interface APresenter: Contract.Presenter
     interface AView: Contract.View<APresenter>{
-        fun setInfo(info : String)
         fun showError(error: String)
     }
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+        android:background="@android:color/white">
+    
+    <ImageView
+            android:id="@+id/img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="16:9"/>
+    
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingRight="15dp"
+            android:paddingLeft="65dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/transaction_black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/img"/>
+    
+    
+    <TextView
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/zan_unselect"
+            android:drawablePadding="5dp"
+            android:text="12"/>
+    
+    <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/up"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/comment"
+            android:drawablePadding="5dp"
+            android:text="12"/>
+    
+    <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/comment"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/share"
+            android:drawablePadding="5dp"
+            android:text="12"/>
+    
+    <TextView
+            android:id="@+id/imgCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img"
+            android:text="10图"
+            android:textSize="12sp"
+            android:background="@drawable/bg_pic_count"
+            android:textColor="@android:color/white"/>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/authHead"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="10dp"
+            app:civ_border_color="@android:color/white"
+            app:layout_constraintDimensionRatio="1:1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
